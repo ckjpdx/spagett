@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  color: black;
+  text-decoration: none;
 }
 nav {
   float: right;
@@ -8,25 +10,34 @@ nav {
   font-family: cursive;
   font-size: 2em;
 }
-
 nav ul {
   text-align: right;
   list-style: none;
 }
-
+main {
+  padding: 20px;
+}
+article {
+    vertical-align: middle;
+}
 section.col-half {
   display: inline-block;
   width: 49%;
 }
-
-section.col-half img {
+section.col-half.speghetti-side {
+  position: relative;
+}
+section.col-half.speghetti-side img {
   display: block;
   max-width: 500px;
   width: 100%;
 }
-
 section.gallery img {
   float: left;
+  width: 19%;
+  height: 150px;
+  object-fit: cover;
+  padding: 5px;
 }
 h1 {
   font-family: 'Knewave', cursive;
@@ -41,30 +52,14 @@ h2.spegett-text {
   font-size: 4em;
   font-family: cursive;
 }
-
-main {
-  padding: 20px;
-}
 p {
     margin: 30px 10px;
 }
-
-article {
-    vertical-align: middle;
-}
-
-
 li {
     display: inline;
     text-align: right;
     margin-left: 20px;
 }
-
-
 header {
     padding: 20px;
-}
-
-section.col-half.speghetti-side {
-    position: relative;
 }
