@@ -82,6 +82,7 @@ overflow: auto;
 footer p {
   text-align: center;
 }
+/*TABLE*/
 table {
   width: 60%;
   background: #FEE;
@@ -100,6 +101,9 @@ td:before {
   width: 10px;
   height: 10px;
   content:"";
+}
+tbody > tr:nth-of-type(odd) {
+  background: #FDD;
 }
 /*INLINE*/
 h1 {
