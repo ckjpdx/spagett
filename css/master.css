@@ -1,17 +1,70 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+nav {
+  float: right;
+  margin: 35px;
+  font-family: cursive;
+  font-size: 2em;
+}
+
 nav ul {
-  display: inline;
+  text-align: right;
   list-style: none;
 }
+
 section.col-half {
   display: inline-block;
-  width: 50%;
+  width: 49%;
 }
+
 section.col-half img {
   display: block;
+  max-width: 500px;
+  width: 100%;
 }
+
 section.gallery img {
   float: left;
+}
+h1 {
+  font-family: 'Knewave', cursive;
+  color: red;
+  font-size: 6em;
+}
+h2.spegett-text {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  color: white;
+  font-size: 4em;
+  font-family: cursive;
+}
+
+main {
+  padding: 20px;
+}
+p {
+    margin: 30px 10px;
+}
+
+article {
+    vertical-align: middle;
+}
+
+
+li {
+    display: inline;
+    text-align: right;
+    margin-left: 20px;
+}
+
+
+header {
+    padding: 20px;
+}
+
+section.col-half.speghetti-side {
+    position: relative;
 }
