@@ -1,3 +1,17 @@
 * {
   box-sizing: border-box;
 }
+nav ul {
+  display: inline;
+  list-style: none;
+}
+section.col-half {
+  display: inline-block;
+  width: 50%;
+}
+section.col-half img {
+  display: block;
+}
+section.gallery img {
+  float: left;
+}
