@@ -4,25 +4,44 @@
   color: black;
   text-decoration: none;
 }
-nav {
-  float: right;
-  margin: 35px;
-  font-family: cursive;
-  font-size: 2em;
-}
-nav ul {
-  text-align: right;
-  list-style: none;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 main {
   padding: 20px;
 }
+nav {
+  float: right;
+  margin: 2% 2% 0 0;
+  font-family: cursive;
+  font-size: 2em;
+}
 article {
     vertical-align: middle;
 }
+section {
+  margin: 20px auto;
+}
+section img#spagett-hiding {
+  position: absolute;
+  width: 20%;
+  top: 3px;
+  right: 128px;
+  z-index: -1;
+}
+section img#spagett-hand {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
 section.col-half {
   display: inline-block;
-  width: 49%;
+  width: 48%;
+}
+section.col-half.text-side img#speghetti-pile {
+  float: right;
+  width: 50%;
 }
 section.col-half.speghetti-side {
   position: relative;
@@ -42,18 +61,20 @@ section.gallery img {
 h1 {
   font-family: 'Knewave', cursive;
   color: red;
-  font-size: 6em;
+  font-size: 6vw;
 }
-h2.spegett-text {
+h2#spagett-text {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 35%;
+  left: 25%;
   color: white;
   font-size: 4em;
   font-family: cursive;
+  transform: rotate(-15deg);
 }
 p {
     margin: 30px 10px;
+    line-height: 1.5em;
 }
 li {
     display: inline;
