@@ -4,9 +4,21 @@
   color: black;
   text-decoration: none;
 }
+.cf {
+  clear: both;
+}
+/*BLOCKS*/
+html {
+  background-image: url(../img/bg-white.png);
+}
 body {
   max-width: 1200px;
   margin: 0 auto;
+  background-image: url(../img/bg-white2.png);
+  height: 100%;
+}
+header {
+    padding: 20px;
 }
 main {
   padding: 20px;
@@ -30,10 +42,9 @@ div#title {
 }
 section img#spagett-hiding {
   position: absolute;
-  width: 20%;
-  top: 3px;
-  right: 128px;
-  z-index: -1;
+  width: 30%;
+  top: -22px;
+  right: 145px;
 }
 section.col-half {
   display: inline-block;
@@ -46,17 +57,30 @@ section.col-half.text-side img#speghetti-pile {
 section.col-half.speghetti-side {
   position: relative;
 }
-section.col-half.speghetti-side img {
+section.col-half.speghetti-side img#big-plate {
   display: block;
   max-width: 500px;
   width: 100%;
+  z-index: 1;
+  position: relative;
 }
 section.gallery img {
   float: left;
   width: 19%;
+  min-width: 150px;
   height: 150px;
   object-fit: cover;
-  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px 2px orangered;
+  margin: 5px;}
+section.gallery img:hover {
+  box-shadow: 0px 3px 5px 2px white;
+}
+footer {
+overflow: auto;
+}
+footer p {
+  text-align: center;
 }
 table {
   width: 60%;
@@ -77,6 +101,7 @@ td:before {
   height: 10px;
   content:"";
 }
+/*INLINE*/
 h1 {
   font-family: 'Knewave', cursive;
   color: red;
@@ -90,19 +115,31 @@ h2#spagett-text {
   font-size: 4em;
   font-family: cursive;
   transform: rotate(-15deg);
+  z-index: 2;
 }
 p {
   margin: 30px 10px;
   line-height: 1.5em;
 }
+p.sauce-bullet {
+  position: relative;
+}
+p.sauce-bullet:before {
+  background-image: url(../img/splatter.png);
+  background-size: 70px 70px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -71px;
+}
 p:first-letter {
   font-size: 1.2em;
 }
 li {
-    display: inline;
-    text-align: right;
-    margin-left: 20px;
-}
-header {
-    padding: 20px;
+  display: inline;
+  text-align: right;
+  margin-left: 20px;
 }
