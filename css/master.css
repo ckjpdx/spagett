@@ -20,8 +20,13 @@ nav {
 article {
     vertical-align: middle;
 }
-section {
-  margin: 20px auto;
+img#spagett-hand {
+  width: 100px;
+  display: block;
+  margin: -20px auto 25px;
+}
+div#title {
+  font-size: 2vw;
 }
 section img#spagett-hiding {
   position: absolute;
@@ -29,11 +34,6 @@ section img#spagett-hiding {
   top: 3px;
   right: 128px;
   z-index: -1;
-}
-img#spagett-hand {
-  width: 100px;
-  display: block;
-  margin: -35px auto 25px;
 }
 section.col-half {
   display: inline-block;
@@ -69,6 +69,14 @@ td, th {
   padding: 10px;
   border: 2px #CCC solid;
 }
+td:before {
+  background-image: url(../img/splatter.png);
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content:"";
+}
 h1 {
   font-family: 'Knewave', cursive;
   color: red;
@@ -76,7 +84,7 @@ h1 {
 }
 h2#spagett-text {
   position: absolute;
-  top: 35%;
+  top: 23%;
   left: 25%;
   color: white;
   font-size: 4em;
@@ -84,8 +92,11 @@ h2#spagett-text {
   transform: rotate(-15deg);
 }
 p {
-    margin: 30px 10px;
-    line-height: 1.5em;
+  margin: 30px 10px;
+  line-height: 1.5em;
+}
+p:first-letter {
+  font-size: 1.2em;
 }
 li {
     display: inline;
