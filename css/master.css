@@ -30,10 +30,10 @@ section img#spagett-hiding {
   right: 128px;
   z-index: -1;
 }
-section img#spagett-hand {
+img#spagett-hand {
   width: 100px;
   display: block;
-  margin: 0 auto;
+  margin: -35px auto 25px;
 }
 section.col-half {
   display: inline-block;
@@ -57,6 +57,17 @@ section.gallery img {
   height: 150px;
   object-fit: cover;
   padding: 5px;
+}
+table {
+  width: 60%;
+  background: #FEE;
+  font-size: 0.8em;
+  margin: 0 auto;
+  min-width: 180px;
+}
+td, th {
+  padding: 10px;
+  border: 2px #CCC solid;
 }
 h1 {
   font-family: 'Knewave', cursive;
